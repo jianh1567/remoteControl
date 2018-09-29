@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F5EF"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_title_content"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="@color/black">
+
+        <TextView
+            android:id="@+id/tv_title_center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:text="设备列表"
+            android:textColor="@color/white"
+            android:textSize="52px"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px"
+            android:background="@drawable/ic_small_add"/>
+
+    </RelativeLayout>
+
+    <com.wind.control.widget.listview.XSwipeMenuListView
+        android:id="@+id/device_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp">
+
+    </com.wind.control.widget.listview.XSwipeMenuListView>
+
+
+</LinearLayout>

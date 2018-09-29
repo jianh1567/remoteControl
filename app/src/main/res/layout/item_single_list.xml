@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:gravity="center"
+        android:text="这个遥控器好用吗"
+        android:textColor="#000000"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_one"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/btn_ok_one"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:background="@drawable/selector_ok_button"
+            android:text="好用，就用这个"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btn_no_ok"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_next_button"
+            android:text="不好用，换一个"
+            android:textColor="#46A1F4"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_two"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_previous"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/selector_next_button"
+            android:text="上一个"
+            android:textColor="#46A1F4"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:background="@drawable/selector_ok_button"
+            android:text="好用，用这个"/>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/selector_next_button"
+            android:text="下一个"
+            android:textColor="#46A1F4"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

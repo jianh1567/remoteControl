@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lLayout_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_scenic_circle"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="67px"
+        android:layout_marginRight="67px"
+        android:layout_marginTop="67px"
+        android:gravity="center"
+        android:textColor="#282828"
+        android:textSize="48px"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="67px"
+        android:layout_marginRight="67px"
+        android:layout_marginTop="52px"
+        android:gravity="center"
+        android:textColor="#282828"
+        android:textSize="42px" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="60px"
+        android:background="#e6e6e6" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_neg"
+            android:layout_width="wrap_content"
+            android:layout_height="135px"
+            android:layout_weight="1"
+            android:background="@drawable/alertdialog_left_selector"
+            android:gravity="center"
+            android:textColor="#ffa726"
+            android:textSize="48px" />
+
+        <ImageView
+            android:id="@+id/img_line"
+            android:layout_width="1px"
+            android:layout_height="135px"
+            android:background="#e6e6e6" />
+
+        <Button
+            android:id="@+id/btn_pos"
+            android:layout_width="wrap_content"
+            android:layout_height="135px"
+            android:layout_weight="1"
+            android:background="@drawable/alertdialog_right_selector"
+            android:gravity="center"
+            android:textColor="#ffa726"
+            android:textSize="48px" />
+    </LinearLayout>
+
+</LinearLayout>

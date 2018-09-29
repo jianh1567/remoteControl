@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wind.control.activity.SceneSettingActivity">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_top"></include>
+
+    <RelativeLayout
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FF9CABA7"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_speed_view"
+            android:layout_width="match_parent"
+            android:layout_height="700px">
+
+            <com.view.jameson.library.SpeedRecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="60px"
+                android:layout_marginTop="60px"/>
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_scene_name"
+            android:layout_below="@id/rl_speed_view"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:hint="场景名"
+            android:textColor="@color/black_overlay"
+            android:background="@drawable/shape_edittext"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_below="@id/et_scene_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="星期"
+            android:textSize="50px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="10px"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcv_date_select"
+            android:layout_below="@id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="10px"
+            android:layout_centerHorizontal="true"
+            android:scrollbars="none">
+        </android.support.v7.widget.RecyclerView>
+
+        <include
+            android:id="@+id/layout_scene_setting"
+            android:layout_below="@id/rcv_date_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            layout="@layout/item_scene_setting"></include>
+
+        <TextView
+            android:id="@+id/tv_add_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_scene_setting"
+            android:layout_marginTop="20px"
+            android:layout_marginLeft="50px"
+            android:text="添加动作"
+            android:textSize="50px" />
+
+        <ImageView
+            android:id="@+id/iv_add_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_scene_setting"
+            android:src="@drawable/ic_add_action"
+            android:layout_marginTop="20px"
+            android:layout_marginRight="50px"
+            android:layout_alignParentRight="true"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcv_add_action"
+            android:layout_below="@id/tv_add_action"
+            android:layout_marginTop="20px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/btn_save_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10px"
+            android:gravity="center"
+            android:text="保存"
+            android:textSize="50px"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_button"
+            android:onClick="onClickSaveUpdateBtn"/>
+    </RelativeLayout>
+</RelativeLayout>

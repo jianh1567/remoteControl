@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- tabItem -->
+    <declare-styleable name="TabItem">
+        <attr name="tabText" format="string" />
+        <attr name="tabImageUnSelected" format="integer" />
+        <attr name="tabImageSelected" format="integer" />
+        <attr name="tabTextColorUnSelected" format="color" />
+        <attr name="tabTextColorSelected" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <!-- {@deprecated Use civ_circlebackground_color instead.} -->
+        <attr name="civ_fill_color" format="color" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="PickerView">
+        <attr name="isLoop" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SwitchView">
+
+        <attr name="hasShadow" format="boolean" />
+
+        <attr name="primaryColor" format="color" />
+
+        <attr name="primaryColorDark" format="color" />
+
+        <attr name="isOpened" format="boolean" />
+
+    </declare-styleable>
+
+    <declare-styleable name="RippleView">
+        <attr name="rb_color" format="color" />
+        <attr name="rb_strokeWidth" format="dimension"/>
+        <attr name="rb_radius" format="dimension"/>
+        <attr name="rb_duration" format="integer"/>
+        <attr name="rb_rippleAmount" format="integer"/>
+        <attr name="rb_scale" format="float"/>
+        <attr name="rb_type" format="enum">
+            <enum name="fillRipple" value="0"/>
+            <enum name="strokeRipple" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ViewfinderView">
+        <attr name="corner_color" format="color"/>
+        <attr name="laser_color" format="color"/>
+        <attr name="frame_color" format="color" />
+        <attr name="mask_color" format="color" />
+        <attr name="result_point_color" format="color"/>
+        <attr name="result_color" format="color" />
+        <attr name="label_text_color" format="color"/>
+        <attr name="label_text" format="string"/>
+        <attr name="label_text_size" format="float"/>
+    </declare-styleable>
+
+    <!--自定义MLImageView的属性-->
+    <declare-styleable name="MLImageView">
+        <attr name="press_alpha" format="integer" />
+        <attr name="press_color" format="color" />
+        <attr name="radius" format="dimension"/>
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color"/>
+        <attr name="shape_type" format="enum">
+            <enum name="round" value="0"/>
+            <enum name="rectangle" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>

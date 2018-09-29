@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="156px"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.wind.control.widget.BottomTabItem
+                android:id="@+id/tab_home_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabImageSelected="@drawable/tab_home_selected"
+                app:tabImageUnSelected="@drawable/tab_home"
+                app:tabText="@string/tab_home_page"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.wind.control.widget.BottomTabItem
+                android:id="@+id/tab_scene"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabImageSelected="@drawable/tab_find_selected"
+                app:tabImageUnSelected="@drawable/tab_find"
+                app:tabText="@string/tab_scene"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.wind.control.widget.BottomTabItem
+                android:id="@+id/tab_device"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabImageSelected="@drawable/tab_device_seleceted"
+                app:tabImageUnSelected="@drawable/tab_device"
+                app:tabText="@string/tab_device"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.wind.control.widget.BottomTabItem
+                android:id="@+id/tab_mine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabImageSelected="@drawable/tab_mine_selected"
+                app:tabImageUnSelected="@drawable/tab_mine"
+                app:tabText="@string/tab_mine"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

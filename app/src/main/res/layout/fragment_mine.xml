@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F5EF"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="540px"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="80px"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.wind.control.view.CircleImageView
+                            android:id="@+id/iv_header"
+                            android:layout_width="260px"
+                            android:layout_height="260px"
+                            android:background="@drawable/ic_my_hd_def"/>
+
+                        <TextView
+                            android:id="@+id/tv_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="40px"
+                            android:text="18655520182"
+                            android:textColor="#000000"
+                            android:textSize="54px"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#f8f8f8"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_one"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40px"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_scene"
+                            android:layout_width="match_parent"
+                            android:layout_height="150px"
+                            android:background="@drawable/bg_btn_selector">
+
+                            <ImageView
+                                android:id="@+id/iv_scene"
+                                android:layout_width="66px"
+                                android:layout_height="66px"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="24px"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_my_scene"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="30px"
+                                android:layout_toRightOf="@+id/iv_scene"
+                                android:text="我的场景"
+                                android:textColor="#000000"
+                                android:textSize="42px"/>
+
+                            <ImageView
+                                android:layout_width="50px"
+                                android:layout_height="50px"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="40px"
+                                android:background="@drawable/ic_more"/>
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_marginLeft="120px"
+                            android:background="#dddddd"/>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_my_device"
+                            android:layout_width="match_parent"
+                            android:layout_height="150px"
+                            android:background="@drawable/bg_btn_selector">
+
+                            <ImageView
+                                android:id="@+id/iv_device"
+                                android:layout_width="63px"
+                                android:layout_height="63px"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="28px"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_my_device"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="30px"
+                                android:layout_toRightOf="@+id/iv_device"
+                                android:text="我的设备"
+                                android:textColor="#000000"
+                                android:textSize="42px"/>
+
+                            <ImageView
+                                android:layout_width="50px"
+                                android:layout_height="50px"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="40px"
+                                android:background="@drawable/ic_more"/>
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_marginLeft="120px"
+                            android:background="#dddddd"/>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_bind_device"
+                            android:layout_width="match_parent"
+                            android:layout_height="150px"
+                            android:background="@drawable/bg_btn_selector"
+                            android:visibility="visible">
+
+                            <ImageView
+                                android:id="@+id/iv_bind_device"
+                                android:layout_width="60px"
+                                android:layout_height="60px"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="30px"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_bind_device"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="30px"
+                                android:layout_toRightOf="@+id/iv_bind_device"
+                                android:text="红外设备配网"
+                                android:textColor="#000000"
+                                android:textSize="42px"/>
+
+                            <ImageView
+                                android:layout_width="50px"
+                                android:layout_height="50px"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="40px"
+                                android:background="@drawable/ic_more"/>
+
+                        </RelativeLayout>
+
+                        <View
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_marginLeft="120px"
+                            android:background="#dddddd"/>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_setting"
+                            android:layout_width="match_parent"
+                            android:layout_height="150px"
+                            android:background="@drawable/bg_btn_selector"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/iv_setting"
+                                android:layout_width="60px"
+                                android:layout_height="60px"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="30px"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_setting"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="30px"
+                                android:layout_toRightOf="@+id/iv_setting"
+                                android:text="设置"
+                                android:textColor="#000000"
+                                android:textSize="42px"/>
+
+                            <ImageView
+                                android:layout_width="50px"
+                                android:layout_height="50px"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="40px"
+                                android:background="@drawable/ic_more"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40px"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_feedback"
+                            android:layout_width="match_parent"
+                            android:layout_height="150px"
+                            android:background="@drawable/bg_btn_selector">
+
+                            <ImageView
+                                android:id="@+id/iv_feed"
+                                android:layout_width="60px"
+                                android:layout_height="60px"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="30px"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_my_help"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="30px"
+                                android:layout_toRightOf="@+id/iv_feed"
+                                android:text="意见与反馈"
+                                android:textColor="#000000"
+                                android:textSize="42px"/>
+
+                            <ImageView
+                                android:layout_width="50px"
+                                android:layout_height="50px"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="40px"
+                                android:background="@drawable/ic_more"/>
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_marginLeft="120px"
+                            android:background="#dddddd"/>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_about"
+                            android:layout_width="match_parent"
+                            android:layout_height="150px"
+                            android:background="@drawable/bg_btn_selector">
+
+                            <ImageView
+                                android:id="@+id/iv_about"
+                                android:layout_width="60px"
+                                android:layout_height="60px"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="30px"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_my_about"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="30px"
+                                android:layout_toRightOf="@+id/iv_about"
+                                android:text="关于"
+                                android:textColor="#000000"
+                                android:textSize="42px"/>
+
+                            <ImageView
+                                android:layout_width="50px"
+                                android:layout_height="50px"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="40px"
+                                android:background="@drawable/ic_more"/>
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_marginLeft="120px"
+                            android:background="#dddddd"/>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_update_app"
+                            android:layout_width="match_parent"
+                            android:layout_height="150px"
+                            android:background="@drawable/bg_btn_selector">
+
+                            <ImageView
+                                android:id="@+id/iv_update"
+                                android:layout_width="60px"
+                                android:layout_height="60px"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="30px"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_update"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="30px"
+                                android:layout_toRightOf="@id/iv_update"
+                                android:text="版本更新"
+                                android:textColor="#000000"
+                                android:textSize="42px"/>
+
+                            <ImageView
+                                android:layout_width="50px"
+                                android:layout_height="50px"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="40px"
+                                android:background="@drawable/ic_more"/>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

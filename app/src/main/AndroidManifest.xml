@@ -1,0 +1,258 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.wind.control">
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/> <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.VIBRATE"/> <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.CAMERA"/> <!-- 摄像头权限 -->
+    <uses-feature android:name="android.hardware.camera.autofocus"/> <!-- 自动聚焦权限 -->
+    <!-- 往sdcard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 读取sdcard中数据的权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_remote"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_remote"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.wind.control.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/__picker_provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".activity.load.LoadingActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+        <activity
+            android:name=".activity.ScanConnectActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+        <service android:name=".util.BluetoothLeService"/>
+
+        <activity
+            android:name="com.google.zxing.activity.CaptureActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+        <activity
+            android:name=".activity.TestActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+        <!--登录界面-->
+        <activity
+            android:name=".activity.load.LoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"/>
+
+        <!--关于-->
+        <activity
+            android:name=".activity.mine.AboutUsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"/>
+
+        <!--意见与反馈-->
+        <activity
+            android:name=".activity.load.RegisterActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+        <!--意见与反馈-->
+        <activity
+            android:name=".activity.mine.FeedbackActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+        <!-- 拍照相关类 -->
+        <activity
+            android:name="me.iwf.photopicker.PhotoPickerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/customTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <!-- 拍照相关类 -->
+        <activity
+            android:name="me.iwf.photopicker.PhotoPagerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <!-- 拍照相关类 -->
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <!--个人中心-->
+        <activity
+            android:name=".activity.mine.UserInfoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+        <!--选择品牌-->
+        <activity
+            android:name=".activity.remote.SelecteTypeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+        <!--选择类型-->
+        <activity
+            android:name=".activity.remote.BrandActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+        <!--选择设备-->
+        <activity
+            android:name=".activity.remote.SelectDeviceActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+        <!--灯的控制-->
+        <activity
+            android:name=".activity.remote.LightControl1Activity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <!--插座控制-->
+        <activity
+            android:name=".activity.remote.SocketControlActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+        <!--空调控制界面-->
+        <activity
+            android:name=".activity.remote.AcActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+        <!--添加设备-->
+        <activity
+            android:name=".activity.device.AddDeviceActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+
+        <!--配网-->
+        <activity
+            android:name=".activity.EsptouchDemoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+        <activity android:name=".activity.SceneSettingActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+        </activity>
+
+        <activity android:name=".activity.SceneAddActionActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+        </activity>
+
+        <activity android:name=".activity.SceneLightControlActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+        </activity>
+
+        <activity android:name=".activity.SceneAircControlActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+        </activity>
+	
+
+        <activity android:name=".activity.MySceneActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+        </activity>
+
+        <activity android:name=".activity.device.BindDeviceActivity"
+                  android:configChanges="keyboardHidden|orientation|screenSize"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+        <activity android:name=".activity.device.ConfirmWifiActivity"
+                  android:configChanges="keyboardHidden|orientation|screenSize"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+        <activity android:name=".activity.device.StartDmsActivity"
+                  android:configChanges="keyboardHidden|orientation|screenSize"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+        <activity android:name=".activity.device.BindFailActivity"
+                  android:configChanges="keyboardHidden|orientation|screenSize"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="IRRemote"/>
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="5"/>
+        <meta-data
+            android:name="AA_MODELS"
+            android:value="net.irext.ircontrol.bean.RemoteControl"/>
+
+        <meta-data
+            android:name="irext_app_key"
+            android:value="e13d9ffef985f66ca40deca00f408ebd"/>
+
+        <meta-data
+            android:name="irext_app_secret"
+            android:value="4afbe62d895cf1f83cc747b025aa2b66"/>
+
+    </application>
+</manifest>

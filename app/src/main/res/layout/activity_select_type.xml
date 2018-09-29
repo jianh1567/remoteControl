@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="#000000">
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_centerVertical="true"
+            android:padding="35px"
+            android:src="@drawable/ic_left"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingLeft="25px"
+            android:text="选择类型"
+            android:textColor="#ffffff"
+            android:textSize="52px"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#E1E1E1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="280px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_device_stb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_item"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="160px"
+                android:layout_height="160px"
+                android:background="@drawable/device_stb"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="机顶盒"
+                android:textColor="#5C5354"
+                android:textSize="32px"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6px"
+                android:text="(换台,看电视)"
+                android:textColor="#23809F"
+                android:textSize="38px"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_device_ac"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_item"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="180px"
+                android:layout_height="180px"
+                android:background="@drawable/device_ac"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="空调"
+                android:textColor="#5C5354"
+                android:textSize="36px"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#cccccc"/>
+
+        <LinearLayout
+            android:id="@+id/ll_device_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_item"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="180px"
+                android:layout_height="180px"
+                android:background="@drawable/device_tv"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电视"
+                android:textColor="#5C5354"
+                android:textSize="36px"/>
+        </LinearLayout>
+
+        <!--  <LinearLayout
+              android:id="@+id/ll_wifi"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:background="@drawable/selector_bg_item"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+              <ImageView
+                  android:layout_width="180px"
+                  android:layout_height="180px"
+                  android:background="@drawable/device_purifier"/>
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="wifi配网"
+                  android:textColor="#5C5354"
+                  android:textSize="36px"/>
+
+          </LinearLayout>
+  -->
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cccccc"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="260px"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/ll_device_box"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_item"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="160px"
+                android:layout_height="160px"
+                android:background="@drawable/device_box"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="盒子"
+                android:textColor="#5C5354"
+                android:textSize="32px"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#cccccc"/>
+
+        <LinearLayout
+            android:id="@+id/ll_device_dvd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_item"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="160px"
+                android:layout_height="160px"
+                android:background="@drawable/device_dvd"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DVD"
+                android:textColor="#5C5354"
+                android:textSize="32px"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#cccccc"/>
+
+        <LinearLayout
+            android:id="@+id/ll_device_pa"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_item"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="160px"
+                android:layout_height="160px"
+                android:background="@drawable/device_pa"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="功放"
+                android:textColor="#5C5354"
+                android:textSize="32px"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cccccc"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="260px"
+        android:orientation="horizontal"
+        android:visibility="gone">
+<!--
+        <LinearLayout
+            android:id="@+id/ll_device_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_item"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="160px"
+                android:layout_height="160px"
+                android:background="@drawable/device_tv"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电视"
+                android:textColor="#5C5354"
+                android:textSize="32px"/>
+        </LinearLayout>-->
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#cccccc"/>
+
+        <LinearLayout
+            android:id="@+id/ll_device_projector"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_item"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="160px"
+                android:layout_height="160px"
+                android:background="@drawable/device_projector"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="投影仪"
+                android:textColor="#5C5354"
+                android:textSize="32px"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#cccccc"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/ll_device_fan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_item"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="160px"
+                android:layout_height="160px"
+                android:background="@drawable/device_fan"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="风扇"
+                android:textColor="#5C5354"
+                android:textSize="32px"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cccccc"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240px"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/ll_device_light"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_item"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:background="@drawable/device_light"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="灯泡"
+                android:textColor="#5C5354"
+                android:textSize="32px"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#cccccc"/>
+
+        <LinearLayout
+            android:id="@+id/ll_device_purifier"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_item"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:background="@drawable/device_purifier"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="空气净化器"
+                android:textColor="#5C5354"
+                android:textSize="32px"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#cccccc"
+            android:visibility="gone"/>
+
+           <LinearLayout
+               android:id="@+id/ll_wifi"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:gravity="center_horizontal"
+               android:orientation="vertical">
+
+               <ImageView
+                   android:layout_width="150px"
+                   android:layout_height="150px"
+                   android:background="@drawable/device_purifier"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="wifi配网"
+                   android:textColor="#5C5354"
+                   android:textSize="32px"/>
+
+           </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cccccc"
+        android:visibility="gone"/>
+
+</LinearLayout>

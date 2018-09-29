@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name">智能家居</string>
+    <item name="is_scale_size_tag" type="id" />
+    <item name="is_scale_font_tag" type="id" />
+
+    <!--首页tab-->
+    <string name="tab_home_page">我的家</string>
+    <string name="tab_scene">场景</string>
+    <string name="tab_device">设备</string>
+    <string name="tab_mine">我的</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_title">智能家居</string>
+    
+    <string name="sleep_mode">睡眠</string>
+    <string name="daily_mode">日常</string>
+    <string name="night_mode">夜间</string>
+    <string name="sports_mode">运动</string>
+    <string name="leave_home_mode">离家</string>
+    <string name="getup">示例:早起</string>
+    <string name="work">示例:去上班</string>
+    <string name="home">示例:回家啦</string>
+    <string name="timing_trigger">定时触发</string>
+    <string name="manual_trigger">手动触发</string>
+    <string name="location_trigger">按位置触发</string>
+    
+    <string name="air_conditioner">空调</string>
+    <string name="light">灯</string>
+    <string name="open">开</string>
+    <string name="close">关</string>
+    <string name="auto">自动</string>
+    <string name="cool">制冷</string>
+    <string name="dehumidified">除湿</string>
+    <string name="ventilation">通风</string>
+    <string name="heat">制热</string>
+    <string name="low">低</string>
+    <string name="middle">中</string>
+    <string name="high">高</string>
+    <string name="txt_login_pwd">密码登录</string>
+    <string name="txt_login_code">验证码登录</string>
+    <string name="txt_input_code">请输入验证码</string>
+    <string name="txt_get_code">获取验证码</string>
+    <string name="txt_register">注册</string>
+    <string name="txt_register_account">注册账号</string>
+    <string name="txt_pwd_no">两次密码输入不一致</string>
+    <string name="et_input_phone">请输入手机号码</string>
+    <string name="et_input_pwd">请输入密码 (至少6位字符)</string>
+    <string name="input_pwd_hint">请输入密码</string>
+    <string name="input_once_pwd_hint">请再次输入密码</string>
+    <string name="txt_error_phone_num">请输入正确的手机号码</string>
+    <string name="txt_error_pwd">密码为6-20位的数字、字母或下划线</string>
+    <string name="isNetWork">暂无网络连接，请稍后重试</string>
+    <string name="btn_login">登录</string>
+    <string name="txt_go_register">还没有账号？注册Iot账号</string>
+    <string name="txt_forgot_pwd">忘记密码</string>
+    <string name="hint_please_input_feedback_title">请输入反馈内容的标题(20字以内)</string>
+    <string name="question_description">问题描述</string>
+    <string name="title">标题</string>
+    <string name="hint_please_input_feedback_content">请输入反馈内容</string>
+    <string name="contact_way">联系方式</string>
+    <string name="upload_photos_no_more_than_six">上传图片 (最多6张)</string>
+    <string name="hint_please_input_your_phone_num">填写您的手机号码</string>
+    <string name="please_input_title_content">请填写标题内容</string>
+    <string name="please_input_feedback_content">请填写反馈内容</string>
+    <string name="hd_photo">头像</string>
+    <string name="phone_num">手机号码</string>
+    <string name="account_id">账户ID</string>
+    <string name="sex">性别</string>
+    <string name="birthday">生日</string>
+    <string name="identity_auth">身份认证</string>
+    <string name="not_auth">未认证</string>
+    <string name="login_pwd">登录密码</string>
+    <string name="pay_pwd">支付密码</string>
+    <string name="logout">退出登录</string>
+    <string name="user_info">个人信息</string>
+    <string name="female">女</string>
+    <string name="male">男</string>
+    <string name="ssid_title">wifi名称: </string>
+    <string name="bssid_title">BSSID: </string>
+    <string name="password_title">密码: </string>
+    <string name="device_count_title">Device count: </string>
+    <string name="confirm">确认</string>
+    <string name="wifi_5g_message">设备暂时不支持5G网络配网</string>
+    <string name="about_uto168">
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;上海与德通讯技术有限公司是中国大陆地区著名的大型手机和智能终端原始设计制造商（ODM）。 [1-4]  创业团队的历史沿革始于2007年，后于2010年成立与德通讯。 [1-4]  专注于移动终端、智能硬件、人工智能、物联网产品等领域的研发设计和智能制造
+        \n&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;上海与德为全球各大品牌和互联网客户大规模设计、研发、制造各类智能手机和移动终端，并持续保持行业领先地位和高速成长。总部位于上海，制造物流基地在深圳。目前规模1500人，80%以上为研发人员。具有完整的产品设计、研发、测试、整机制造交付能力，能为客户提供全方位的服务和技术支持，和中国以及全球许多国家的品牌客户，形成了良好的合作关系。
+    </string>
+    <string name="scene_setting">场景设置</string>
+    <string name="add_action">添加动作</string>
+    <string name="airc_control">空调控制</string>
+    <string name="light_control">灯控制</string>
+    <string name="delete_scene_fail">删除场景失败</string>
+    <string name="add_scene">请点击右上角 添加场景</string>
+    <string name="update_scene">更新场景</string>
+    <string name="save_scene">保存场景</string>
+    <string name="inpute_name">请输入场景名</string>
+    <string name="inpute_time">请输入执行时间</string>
+    <string name="inpute_date">请选择星期几执行</string>
+    <string name="please_add_action">请给场景添加要执行的动作</string>
+    <string name="update_fail">场景更新失败</string>
+    <string name="update_success">场景更新成功</string>
+    <string name="add_success">场景添加成功</string>
+    <string name="net_error">网络错误</string>
+    <string name="add_fail">场景添加失败</string>
+    <string name="scene_bedroom">卧室</string>
+    <string name="scene_toilet">卫生间</string>
+    <string name="scene_drawing_room">客厅</string>
+    <string name="cancel">取消</string>
+    <string name="submit">确认</string>
+    <string name="no_more_data">没有更多数据</string>
+    <string name="app_update_log">1.修复功能性BUG;\n2.部分性能优化;\n3.解决无法正常联网问题;\n</string>
+    <string name="get_vesion_error">获取版本信息错误</string>
+</resources>

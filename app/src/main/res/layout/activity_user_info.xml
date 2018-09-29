@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:descendantFocusability="blocksDescendants">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60px"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_btn_hd_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="138px"
+                    android:background="@drawable/bg_btn_selector"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="30px"
+                    android:paddingRight="30px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:text="@string/hd_photo"
+                        android:textColor="@color/theme_text"
+                        android:textSize="42px" />
+
+                    <View
+                        android:layout_width="0px"
+                        android:layout_height="0px"
+                        android:layout_weight="1" />
+
+
+                    <com.wind.control.view.CircleImageView
+                        android:id="@+id/iv_user_hd"
+                        android:layout_width="90px"
+                        android:layout_height="90px"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_my_hd_def" />
+
+                    <ImageView
+                        android:layout_width="18px"
+                        android:layout_height="36px"
+                        android:layout_marginLeft="30px"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_my_entry" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="30px"
+                    android:background="@color/theme_divider" />
+
+                <LinearLayout
+                    android:id="@+id/ll_btn_phone_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="138px"
+                    android:background="@drawable/bg_btn_selector"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="30px"
+                    android:paddingRight="30px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:text="@string/phone_num"
+                        android:textColor="@color/theme_text"
+                        android:textSize="42px" />
+
+                    <View
+                        android:layout_width="0px"
+                        android:layout_height="0px"
+                        android:layout_weight="1" />
+
+
+                    <TextView
+                        android:id="@+id/tv_phone_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:textColor="@color/theme_text"
+                        android:textSize="39px" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:visibility="gone"
+                    android:layout_marginLeft="30px"
+                    android:background="@color/theme_divider" />
+
+                <LinearLayout
+                    android:id="@+id/ll_btn_account_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="138px"
+                    android:background="@drawable/bg_btn_selector"
+                    android:clickable="true"
+                    android:visibility="gone"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="30px"
+                    android:paddingRight="30px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:text="@string/account_id"
+                        android:textColor="@color/theme_text"
+                        android:textSize="42px" />
+
+                    <View
+                        android:layout_width="0px"
+                        android:layout_height="0px"
+                        android:layout_weight="1" />
+
+
+                    <TextView
+                        android:id="@+id/tv_account_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:textColor="@color/theme_text"
+                        android:textSize="39px" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="30px"
+                    android:background="@color/theme_divider" />
+
+                <LinearLayout
+                    android:id="@+id/ll_btn_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="138px"
+                    android:background="@drawable/bg_btn_selector"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="30px"
+                    android:paddingRight="30px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:text="@string/sex"
+                        android:textColor="@color/theme_text"
+                        android:textSize="42px" />
+
+                    <View
+                        android:layout_width="0px"
+                        android:layout_height="0px"
+                        android:layout_weight="1" />
+
+
+                    <TextView
+                        android:id="@+id/tv_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:text="未设置"
+                        android:textColor="@color/theme_text"
+                        android:textSize="39px" />
+
+
+                    <ImageView
+                        android:layout_width="18px"
+                        android:layout_height="36px"
+                        android:layout_marginLeft="30px"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_my_entry" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="30px"
+                    android:background="@color/theme_divider" />
+
+                <LinearLayout
+                    android:id="@+id/ll_btn_birthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="138px"
+                    android:background="@drawable/bg_btn_selector"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="30px"
+                    android:paddingRight="30px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:text="@string/birthday"
+                        android:textColor="@color/theme_text"
+                        android:textSize="42px" />
+
+                    <View
+                        android:layout_width="0px"
+                        android:layout_height="0px"
+                        android:layout_weight="1" />
+
+
+                    <TextView
+                        android:id="@+id/tv_birthday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:text="未设置"
+                        android:textColor="@color/theme_text"
+                        android:textSize="39px" />
+
+
+                    <ImageView
+                        android:layout_width="18px"
+                        android:layout_height="36px"
+                        android:layout_marginLeft="30px"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_my_entry" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/ll_btn_identity_auth"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="92px"-->
+                <!--android:layout_marginTop="40px"-->
+                <!--android:background="@drawable/bg_btn_selector"-->
+                <!--android:clickable="true"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:paddingLeft="20px"-->
+                <!--android:paddingRight="20px">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:ellipsize="end"-->
+                    <!--android:includeFontPadding="false"-->
+                    <!--android:maxLines="1"-->
+                    <!--android:text="@string/identity_auth"-->
+                    <!--android:textColor="@color/theme_text"-->
+                    <!--android:textSize="28px" />-->
+
+                <!--<View-->
+                    <!--android:layout_width="0px"-->
+                    <!--android:layout_height="0px"-->
+                    <!--android:layout_weight="1" />-->
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_identity_auth"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:ellipsize="end"-->
+                    <!--android:includeFontPadding="false"-->
+                    <!--android:maxLines="1"-->
+                    <!--android:text="@string/not_auth"-->
+                    <!--android:textColor="@color/theme_error"-->
+                    <!--android:textSize="26px" />-->
+
+
+                <!--<ImageView-->
+                    <!--android:layout_width="12px"-->
+                    <!--android:layout_height="24px"-->
+                    <!--android:layout_marginLeft="20px"-->
+                    <!--android:scaleType="centerCrop"-->
+                    <!--android:src="@drawable/ic_my_entry" />-->
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60px"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_btn_login_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="138px"
+                    android:background="@drawable/bg_btn_selector"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="30px"
+                    android:paddingRight="30px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:text="@string/login_pwd"
+                        android:textColor="@color/theme_text"
+                        android:textSize="42px" />
+
+                    <View
+                        android:layout_width="0px"
+                        android:layout_height="0px"
+                        android:layout_weight="1" />
+
+
+                    <ImageView
+                        android:layout_width="18px"
+                        android:layout_height="36px"
+                        android:layout_marginLeft="30px"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_my_entry" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="30px"
+                    android:background="@color/theme_divider" />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/ll_btn_pay_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="138px"
+                    android:background="@drawable/bg_btn_selector"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="30px"
+                    android:paddingRight="30px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:text="@string/pay_pwd"
+                        android:textColor="@color/theme_text"
+                        android:textSize="42px" />
+
+                    <View
+                        android:layout_width="0px"
+                        android:layout_height="0px"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_pay_pwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:text="@string/not_auth"
+                        android:textColor="@color/theme_error"
+                        android:textSize="39px" />
+
+                    <ImageView
+                        android:layout_width="18px"
+                        android:layout_height="36px"
+                        android:layout_marginLeft="30px"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_my_entry" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/theme_divider" />
+
+    <TextView
+        android:id="@+id/tv_btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="138px"
+        android:background="@drawable/bg_btn_selector"
+        android:clickable="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:text="@string/logout"
+        android:textColor="@color/theme_text"
+        android:textSize="45px" />
+</LinearLayout>

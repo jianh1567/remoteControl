@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar_layout" />
+
+    <Button
+        android:id="@+id/fragment1_ble_light_status"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/ble_light_on"/>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:textColor="#282828"
+        android:text="亮度调节"/>
+
+    <SeekBar
+        android:id="@+id/seek_bar_brightness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:progressDrawable="@drawable/bg_adjust_seek_bar"
+        android:thumb="@drawable/seekbar_thumb"
+        android:splitTrack="false"
+        android:thumbOffset="10dp"
+        android:max="255"/>
+    <SeekBar
+        android:id="@+id/seek_bar_color_tem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:progressDrawable="@drawable/bg_color_tem_seek_bar"
+        android:thumb="@drawable/seekbar_thumb"
+        android:splitTrack="false"
+        android:thumbOffset="10dp"
+        android:max="100"/>
+
+
+</LinearLayout>

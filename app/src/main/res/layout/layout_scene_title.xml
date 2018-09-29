@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_title_content"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="#FF848CF7">
+
+        <ImageView
+            android:id="@+id/im_back"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:src="@drawable/ic_back"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_title_center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:text="场景列表"
+            android:textColor="@color/white"
+            android:textSize="52px"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv_add_scene"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px"
+            android:background="@drawable/ic_small_add" />
+
+    </RelativeLayout>
+
+</merge>

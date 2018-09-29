@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="52px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/rv_photo_paizhao"
+                android:layout_width="fill_parent"
+                android:layout_height="138px"
+                android:background="@drawable/corners_selector"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="拍照"
+                    android:textColor="#282828"
+                    android:textSize="45px"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#dcdcdc" />
+
+            <LinearLayout
+                android:id="@+id/rv_photo_xcxz"
+                android:layout_width="fill_parent"
+                android:layout_height="138px"
+                android:background="@drawable/bottom_corners_selector"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="从相册中选"
+                    android:textColor="#282828"
+                    android:textSize="45px"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/rv_photo_quxiao"
+            android:layout_width="fill_parent"
+            android:layout_height="138px"
+            android:layout_marginTop="45px"
+            android:background="@drawable/corners_all_selector"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_photo_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:textColor="#282828"
+                android:textSize="45px"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="45px"
+        android:background="@android:color/transparent" />
+
+    <LinearLayout
+        android:id="@+id/pop_layout_sex"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="52px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/rv_sex_boy"
+                android:layout_width="fill_parent"
+                android:layout_height="138px"
+                android:background="@drawable/corners_selector"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="男"
+                    android:textColor="#282828"
+                    android:textSize="45px"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#dcdcdc" />
+
+
+            <LinearLayout
+                android:id="@+id/rv_sex_gril"
+                android:layout_width="fill_parent"
+                android:layout_height="138px"
+                android:background="@drawable/bottom_corners_selector"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="女"
+                    android:textColor="#282828"
+                    android:textSize="45px"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/rv_sex_cancle"
+            android:layout_width="fill_parent"
+            android:layout_height="138px"
+            android:layout_marginTop="45px"
+            android:background="@drawable/corners_all_selector"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:textColor="#282828"
+                android:textSize="45px"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="45px"
+        android:background="@android:color/transparent" />
+</RelativeLayout>

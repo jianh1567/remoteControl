@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lLayout_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_scenic_circle"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:gravity="center"
+        android:text="请选择连接方式"
+        android:textColor="@color/theme_text"
+        android:textSize="48px"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/theme_divider"/>
+
+    <LinearLayout
+        android:id="@+id/ll_blue"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="@drawable/selector_bg_item"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="蓝牙配对"
+            android:textColor="@color/theme_text"
+            android:textSize="42px"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/theme_divider"/>
+
+    <LinearLayout
+        android:id="@+id/ll_wifi"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="@drawable/selector_bg_item"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="wifi配对"
+            android:textColor="@color/theme_text"
+            android:textSize="42px"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/theme_divider"/>
+
+    <LinearLayout
+        android:id="@+id/ll_scan"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="@drawable/selector_bg_other_item"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="二维码"
+            android:textColor="@color/theme_text"
+            android:textSize="42px"/>
+
+    </LinearLayout>
+
+</LinearLayout>

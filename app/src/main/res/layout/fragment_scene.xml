@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_scene_title"/>
+
+    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+        android:id="@+id/trl_refresh_scene"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF9CABA7">
+
+     <!--   <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">-->
+
+         <!--   <TextView
+               android:id="@+id/tv_add_scene"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/add_scene"
+               android:textSize="50px"
+               android:layout_centerInParent="true"/>-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/scene_list_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+       <!-- </RelativeLayout>-->
+    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+</LinearLayout>

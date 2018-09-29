@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:melove="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mlimageview.PictureActivity"
+    android:background="@color/ml_gray">
+
+    <com.wind.control.view.MLImageView
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_margin="8dp"
+        android:src="@mipmap/lz_bp_blue"
+        melove:radius="8dp"
+        melove:shape_type="rectangle" />
+
+    <com.wind.control.view.MLImageView
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_margin="8dp"
+        android:src="@mipmap/lz_bp_blue"
+        melove:shape_type="round" />
+
+    <com.wind.control.view.MLImageView
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_margin="8dp"
+        android:src="@mipmap/lz_bp_blue"
+        melove:border_color="@color/ml_white"
+        melove:border_width="4dp"
+        melove:press_alpha="50"
+        melove:press_color="#00ff00"
+        melove:radius="8dp"
+        melove:shape_type="rectangle" />
+
+    <com.wind.control.view.MLImageView
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_margin="8dp"
+        android:src="@mipmap/lz_bp_blue"
+        melove:border_color="@color/ml_white"
+        melove:border_width="4dp"
+        melove:shape_type="round" />
+</LinearLayout>

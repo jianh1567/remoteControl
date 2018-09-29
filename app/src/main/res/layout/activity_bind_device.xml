@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="#000000">
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_centerVertical="true"
+            android:padding="35px"
+            android:src="@drawable/ic_left"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingLeft="20px"
+            android:text="绑定设备"
+            android:textColor="@color/white"
+            android:textSize="52px"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#E1E1E1"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1000px"
+        android:background="@drawable/view_adddevice_wificonfig_bg2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="60px"
+        android:paddingRight="60px"
+        android:paddingTop="70px">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="长按电源键，等待3-5秒，面板上的配网指示灯开始闪烁，即设备进入配网模式"
+            android:textColor="@color/theme_text"
+            android:textSize="48px"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:layout_marginTop="50px"
+        android:background="@drawable/wifi_confirm_shape"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="48px"/>
+
+</LinearLayout>

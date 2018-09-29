@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="495px"
+        android:layout_height="350px"
+        android:layout_marginLeft="6px"
+        android:layout_marginRight="4px"
+        android:layout_marginTop="28px"
+        android:background="@drawable/shape_white_circle"
+        android:paddingBottom="20px"
+        android:paddingLeft="20px">
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21px"
+            android:text="asdsadasd"
+            android:textColor="#000000"
+            android:textSize="40px"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textColor="#787878"
+            android:textSize="36px"/>
+
+        <ImageView
+            android:id="@+id/iv_ac_name"
+            android:layout_width="110px"
+            android:layout_height="110px"
+            android:layout_marginRight="20px"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_kongtiao"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/iv_deng_name"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15px"
+            android:layout_marginRight="15px"
+            android:background="@drawable/ic_deng_selected"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

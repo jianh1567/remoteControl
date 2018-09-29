@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="160px"
+        android:background="#000000">
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="160px"
+            android:layout_height="160px"
+            android:layout_centerVertical="true"
+            android:padding="38px"
+            android:src="@drawable/ic_left"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingLeft="25px"
+            android:text="选择设备"
+            android:textColor="#ffffff"
+            android:textSize="52px"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#E1E1E1"/>
+
+    <com.wind.control.widget.listview.XSwipeMenuListView
+        android:id="@+id/device_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp">
+
+    </com.wind.control.widget.listview.XSwipeMenuListView>
+
+</LinearLayout>
