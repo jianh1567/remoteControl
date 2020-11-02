@@ -5,13 +5,6 @@ package com.wind.control.model;
  * 注释：
  */
 public class UserInfoBean {
-
-    /**
-     * msg : 获取用户信息成功
-     * code : 1000
-     * userinfo : {"birthday":"","headportrait":"http://saveuserheadimg.oss-cn-shanghai.aliyuncs.com/?Expires=1536143810&OSSAccessKeyId=LTAIasxf2JcQ88q7&Signature=BMOslrQs8f%2B6j1UL%2BodALcYaCa4%3D","sex":"","username":"DKv8UB"}
-     */
-
     private String msg;
     private int code;
     private UserinfoBean userinfo;
